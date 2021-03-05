@@ -1,0 +1,47 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* width, height equal 100% of the viewport. */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* force div to take up body/parent's available space */
+#flex-container {
+    background-color: rgb(67,87,173);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card {
+    background-color: rgb(228,223,218);
+    height:30%;
+    width:50%;
+}
+
+.styleInput {
+
+}
+
+.styleButton {
+
+}
+
+.boxshadow {
+
+}
+
+.textshadow {
+
+}
+
+
+
