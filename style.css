@@ -11,37 +11,87 @@ body {
     width: 100%;
 }
 
+footer {
+    position:absolute;
+    left:40px;
+    bottom: 30px;
+    color:whitesmoke;
+
+}
+
 /* force div to take up body/parent's available space */
 #flex-container {
-    background-color: rgb(67,87,173);
+    background-image: url("background.jpg");
+    background-color: rgb(5,168,170);
+    background-size: cover;
     height: 100vh;
     width: 100vw;
+    align-items:center;
     display: flex;
     justify-content:center;
-    align-items:center;
 }
 
+/* ensure card has a minimum height as per requirements */
 .card {
-    background-color: rgb(228,223,218);
+    background-color: #fff7ed;
     height:30%;
     width:50%;
+    min-width: 240px;
+    max-width: 450px;
+    min-height: 180px;
+    max-height: 280px;
+    border-radius: 30px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+/* text entry rules */
 .styleInput {
-
+    border: 3px solid rgba(0,0,0,0.15);
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    background-color: transparent;
+    padding: 8px;
 }
 
+/* applies 'styleInput' class properties when the item is focused */
+.styleInput:focus {
+    outline:0em;
+}
+
+.styleInput::placeholder {
+    color: black;
+    opacity: 30%;
+}
+
+/* rounded buttons with border-radius */
 .styleButton {
-
+    background-color: #354d3a;
+    color: white;
+    border-color: transparent;
+    border-radius: 25px;
+    font-size: 1.2em;
+    height:40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+.title {
+    margin:0em;
+}
+
+/*  box-shadow rules go here */
 .boxshadow {
-
+    -webkit-box-shadow: 10px 10px 19px -2px rgba(215,180,158,1);
+    -moz-box-shadow: 10px 10px 19px -2px rgba(215,180,158,1);
+    box-shadow: 10px 10px 19px -2px rgba(215,180,158,1);
 }
 
+/* text-shadow rules go here */
 .textshadow {
-
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
-
-
-
