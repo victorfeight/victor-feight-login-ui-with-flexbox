@@ -5,30 +5,24 @@ html {
 
 /* width, height equal 100% of the viewport. */
 body {
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-footer {
-    position:absolute;
-    left:40px;
-    bottom: 60px;
-    color:whitesmoke;
-
-}
 
 /* force div to take up body/parent's available space */
 #flex-container {
     background-image: url("background.jpg");
-    background-color: rgb(5,168,170);
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    align-items:center;
+    background-color: whitesmoke;
     display: flex;
+    align-items:center;
     justify-content:center;
+    flex-direction: column;
 }
 
 /* ensure card has a minimum height as per requirements */
@@ -47,6 +41,33 @@ footer {
     flex-direction: column;
     justify-content: space-around;
 }
+
+footer {
+    padding-top: 30px;
+    color:whitesmoke;
+}
+
+/* mobile first media query, move Shoutout text to absolute position after 600px width, 400px height */
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    #flex-container {
+        background-image: url("background.jpg");
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-color: whitesmoke;
+        align-items:center;
+        justify-content:center;
+        position: relative;
+    }
+
+    footer {
+        color:whitesmoke;
+        position: absolute;
+        bottom: 70px;
+        left: 20px;
+    }
+}
+
 
 /* text entry rules */
 .styleInput {
